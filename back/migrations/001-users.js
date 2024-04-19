@@ -27,14 +27,15 @@ module.exports = {
         unique: true
       },
 
-      userphone: {
+      userPhone: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: true,
       },
 
       civility: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        defaultValue: "Not Specified",
       },
       password: {
         type: Sequelize.TEXT('long'),
@@ -66,6 +67,7 @@ module.exports = {
 
       isVerified: {
         type: Sequelize.BOOLEAN,
+        defaultValue: false,
         allowNull: false
       },
 
@@ -81,6 +83,7 @@ module.exports = {
 
       isRestricted: {
         type: Sequelize.BOOLEAN,
+        defaultValue: false,
         allowNull: false
       },
 
