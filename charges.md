@@ -233,7 +233,7 @@
     - createdAt
     - updatedAt
   - Controller :
-    - Signup
+    - Signup ✅
       - Vérification des données (email, password, firstname, lastname, phone, civility, newsletter)
       - Vérification de l'email (unique)
       - Vérification du mot de passe (8 caractères minimum, 1 majuscule, 1 minuscule, 1 chiffre)
@@ -265,13 +265,13 @@
       - Vérification du token de réinitialisation (existe, non expiré)
       - Mise à jour du mot de passe
       - Suppression du token de réinitialisation
-    - VerifyEmail
+    - VerifyEmail ✅
       - Vérification des données (email, emailVerificationToken)
       - Vérification de l'email (existe)
       - Vérification du token d'activation (existe, non expiré)
       - Mise à jour du champ isVerified à true
       - Suppression du token d'activation
-    - Login
+    - Login ✅
       - Vérification des données (email, password)
       - Vérification de l'email (existe)
       - Vérification du mot de passe (correspond)
