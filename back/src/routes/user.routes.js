@@ -18,15 +18,15 @@ const {
   UpdateNewsletter,
   UpdatePassword,
 } = require("../controllers/user.controller");
-//
+
 // // Route pour l'inscription d'un nouvel utilisateur. Utilise la méthode HTTP POST.
 router.post("/signup", SignUp); // Permet à un utilisateur de s'inscrire
-//
+
 // // Route pour la connexion d'un utilisateur. Utilise la méthode HTTP POST.
 router.post("/login", Login); // Permet à un utilisateur de se connecter
-//
+
 // // Route pour la mise à jour du profil utilisateur. Utilise la méthode HTTP PATCH.
-// router.patch("/update", Update); // Permet à un utilisateur de mettre à jour son profil
+router.patch("/update", Update); // Permet à un utilisateur de mettre à jour son profil
 //
 // // Route pour la suppression d'un compte utilisateur. Utilise la méthode HTTP DELETE.
 // router.delete("/delete", Delete); // Permet à un utilisateur de supprimer son compte
