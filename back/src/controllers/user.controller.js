@@ -208,6 +208,10 @@ exports.Login = async (req, res) => {
 };
 
 // fonction pour l'update de données utilisateurs
+
+// Vérification des données (id de l'utilisateur, authentification via middleware (admin))
+// Mise à jour des champs uniquement rensignés sinon on garde les anciennes valeurs
+
 exports.Update = async (req, res) => {
   try {
     const { id, firstName, lastName, email } = req.body;
