@@ -1,0 +1,11 @@
+{
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "baseUrl": "http://localhost:3030"
+    },
+    "dev": {
+      "email": "pricedelu@gmail.com",
+      "password": "Password123"
+    }
+  }
+}
